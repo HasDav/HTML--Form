@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework </title>
+</head>
+<body>
+    
+    <form >
+        <h2>Ձևաթուղթ</h2>
+        <fieldset>
+          <legend>Անձնական Տվյալներ</legend>
+          <ul>
+            <li>
+              <label for="name">Անուն:*</label>
+              <input type="text" name="" placeholder="Գրեք ձեր անունը" id="name" required>
+            </li>
+            <li>
+              <label for="age">Տարիք:</label>
+              <input type="number" name="age" placeholder="գրեք ձեր տարիքը" id="age" min="0" max="125">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Կոնտակտներ</legend>
+          <ul>
+            <li>
+              <label for="email">E-mail:*</label>
+              <input type="email" name="mail" placeholder="գրեք ձեր էլ․ հասցեն" id="email" required>
+            </li>
+            <li>
+              <label for="number">Հեռախոսահամար:*</label>
+              <input type="tel" name="phone" placeholder="գրեք ձեր Հեռախոսահամարը" id="number" maxlength="21" required>
+            </li>
+          </ul>
+        </fieldset>
+        <div>
+          <label for="message">Հետաքրքրություններ</label>
+          <textarea name="comment" placeholder=" Ներկայացրեք ձեր հոբբին" id="message"></textarea>
+        </div>
+        <fieldset>
+          <legend>Ուսում</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="intensive-courses" id="courses" checked>
+              <label for="courses">Դասընթացներ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="books" id="books">
+              <label for="books"> Գրքեր</label>
+            </li>
+            <li>
+              <input type="checkbox" name="video" id="video">
+              <label for="video"> Վիդեո</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Նախասիրություններ</legend>
+          <ul>
+            <li>
+              <input type="radio" name="preference" id="front" value="frontend" checked>
+              <label for="front">Frontend</label>
+            </li>
+            <li>
+              <input type="radio" name="preference" id="back" value="backend">
+              <label for="back">Backend</label>
+            </li>
+          </ul>
+        </fieldset>
+        <div>
+          
+          <p>* — Պարտադիր լրացնելու դաշտեր</p>
+        </div>
+      </form>
+
+</body>
+</html>
